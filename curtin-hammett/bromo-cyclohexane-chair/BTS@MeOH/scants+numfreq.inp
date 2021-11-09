@@ -1,0 +1,18 @@
+! xTB2 ScanTS NumFreq IRC
+
+*xyzfile -1 1 init.xyz
+
+%geom
+ scan
+  B 1 0 = 4.0, 1.6, 27
+ end
+end
+
+%cpcm
+ smd true
+ SMDsolvent "METHANOL"
+end
+
+%pal
+ nprocs 2
+end
