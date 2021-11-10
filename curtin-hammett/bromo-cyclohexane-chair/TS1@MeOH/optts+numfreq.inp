@@ -1,0 +1,28 @@
+! xTB2 NEB-TS NumFreq IRC
+
+*xyzfile -1 1 init.xyz
+
+%cpcm
+ smd true
+ SMDsolvent "METHANOL"
+end
+
+%neb
+ neb_ts_xyzfile "guess.xyz"
+ neb_end_xyzfile "final.xyz"
+
+ interpolation XTB2TS
+ # interpolation XTB2
+ preopt_ends true
+ free_end true
+ reparam 35
+ nimages 30
+end
+
+%geom
+ maxiter 200
+end
+
+%pal
+ nprocs 6
+end
