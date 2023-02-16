@@ -11,6 +11,7 @@ $scheme
 $end
 
 $compounds
+ // The path to the logfiles go here.
  R1(MeOH):   R1@MeOH/opt+numfreq.out
  R2(MeOH):   R2@MeOH/opt+numfreq.out
  P1(MeOH):   P1@MeOH/opt+numfreq.out
